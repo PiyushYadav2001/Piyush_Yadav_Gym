@@ -7,7 +7,6 @@ body {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-
 }
 
 ::-webkit-scrollbar {
@@ -60,7 +59,6 @@ body {
   width: 700px;
   height: 900px;
   margin-top: -330px;
-
 }
 
 .exercise-card {
@@ -106,12 +104,19 @@ body {
   text-decoration: none;
 }
 
+.offline{
+  font-size: 4rem;
+  font-weight: 800;
+  text-align: center;
+  color: #e53e3e;
+  margin-top: 3rem
+}
+
 @media screen and (max-width:1200px) {
   .detail-image {
     width: 300px;
     height: 300px;
   }
-
 
   .react-horizontal-scrolling-menu--scroll-container {
     width: 500px;
@@ -134,7 +139,6 @@ body {
     width: 320px;
     height: 300px;
   }
-
 }
 
 @media screen and (max-width:400px) {

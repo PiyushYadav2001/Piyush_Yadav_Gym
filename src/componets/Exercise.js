@@ -4,7 +4,7 @@ import { Box, Stack, Typography } from "@mui/material";
 import { exerciseOptions, fetchData } from "../utils/fetchData";
 import ExerciseCard from "./ExerciseCard";
 
-const Exercise = ({ exercise, setExercise, bodyPart }) => {
+const Exercise = ({ setExercise,bodyPart,exercise }) => {
   const [currentPage, setCurrentPage] = useState(1);
   const exercisesPerPage = 9;
 
@@ -35,7 +35,7 @@ const Exercise = ({ exercise, setExercise, bodyPart }) => {
 
   const indexOfLastExercise = currentPage * exercisesPerPage;
   const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
-  const currentExercises = exercise.slice(
+  const currentExercises = Array.from(exercise).slice(
     indexOfFirstExercise,
     indexOfLastExercise
   );

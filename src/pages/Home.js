@@ -5,9 +5,13 @@ import SearchExercise from '../componets/SearchExercise'
 import Exercise from '../componets/Exercise'
 
 
+
 const Home = () => {       
      const[bodyPart,setBodyPart]=useState('all')
      const[exercise,setExercise]=useState([])
+
+   
+
   return (
        <Box>
         <HeroBanner/>
